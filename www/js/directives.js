@@ -1,6 +1,18 @@
 angular.module('current.directives', [])
 
 
+.directive('currentSummary', function($timeout, $filter) {
+  return {
+    restrict: 'E',
+    replace: true,
+    templateUrl: 'templates/current-summary.html',
+    scope: true,
+    link: function($scope, $element, $attr) {
+    }
+  }
+ })
+
+
 .directive('currentDetail', function($timeout, $filter) {
   return {
     restrict: 'E',
